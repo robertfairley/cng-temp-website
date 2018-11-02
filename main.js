@@ -22,7 +22,7 @@ Server.listen(
       return process.exit(-1);
     }
 
-    Log.write(`Server started. Listening on port ${5000}`);
+    Log.write(`Server started. Listening on port ${HOSTNAME}:${PORT}`);
   }
 );
 
