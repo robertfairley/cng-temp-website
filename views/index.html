@@ -20,6 +20,27 @@
       border: 1px solid #666;
     }
 
+    a {
+      color: var(--cng-blue);
+      transition: 250ms all ease;
+      box-sizing: border-box;
+      display: inline-block;
+      padding: 1px;
+    }
+
+    a:hover {
+      color: var(--cng-blue-hover);
+    }
+
+    a:active {
+      color: var(--cng-blue-active);
+    }
+
+    a:focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px var(--cng-blue-hover);
+    }
+
     #title {
       text-align: center;
     }
@@ -63,12 +84,17 @@
       <img src="/cng-logo.png" alt="Nord du Canada North Grotesque - Font Family">
     </section>
     <section id="download">
-      <button class="button" id="downloadButton">Download Full<super>†</super> Set</button>&nbsp;&nbsp;
-      <button class="button" id="samplesButton">Download Sample Images (PNG)</button>
+      <button class="button" id="downloadButton">Download Full<super>†</super> Set (ZIP)</button>&nbsp;&nbsp;
+      <button class="button" id="samplesButton">Download Sample Images (PNG-ZIP)</button>
     </section>
     <hr>
     <section id="disclaimer">
+      <h4>Disclaimer</h4>
       <small><strong>† NOTICE:</strong>The "full" set is missing some of the full typeface. The Book Light Rounded face is incorrect. I'll be trying to fix these issues in time, but for now it's use at your own risk.</small>
+    </section>
+    <section>
+      <h4>License Information</h4>
+      <small>See <a href="https://github.com/robertfairley/cng-temp-website/blob/master/README.md#license">this link for licensing information</a></small>
     </section>
   </div>
   <script>
