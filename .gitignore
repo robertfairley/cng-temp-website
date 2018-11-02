@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+lib
+logs
+*.pem
+*.crt
+*.csr
+*.o
+*.a

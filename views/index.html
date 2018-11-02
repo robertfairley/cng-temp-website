@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Canada North Grotesque | Nord du Canada Grotesque</title>
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+      --cng-blue: #325e8d;
+      --cng-blue-hover: #4a7cb1;
+      --cng-blue-active: #81a3c9;
+    }
+
+    section {
+      margin: 1em;
+    }
+
+    hr {
+      border: 1px solid #666;
+    }
+
+    #title {
+      text-align: center;
+    }
+
+    #download {
+      text-align: center;
+    }
+
+    #disclaimer small {
+      color: #666;
+    }
+
+    .button {
+      margin: 1em;
+      padding: 1em 2em;
+      background-color: var(--cng-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 0.9em;
+      cursor: pointer;
+      border: 2px solid transparent;
+
+      transition: 250ms all ease;
+    }
+    
+    .button:hover {
+      background-color: var(--cng-blue-hover);
+    }
+
+    .button:focus {
+      outline: 0;
+      border: 2px solid white;
+      box-shadow: 0 0 0 2px var(--cng-blue);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <section id="title">
+      <img src="/cng-logo.png" alt="Nord du Canada North Grotesque - Font Family">
+    </section>
+    <section id="download">
+      <button class="button" id="downloadButton">Download Full<super>†</super> Set</button>&nbsp;&nbsp;
+      <button class="button" id="samplesButton">Download Sample Images (PNG)</button>
+    </section>
+    <hr>
+    <section id="disclaimer">
+      <small><strong>† NOTICE:</strong>The "full" set is missing some of the full typeface. The Book Light Rounded face is incorrect. I'll be trying to fix these issues in time, but for now it's use at your own risk.</small>
+    </section>
+  </div>
+  <script>
+    const downloadFontSet = event => window.location.href = "/cng-full.zip";
+    const downloadSamples = event => window.location.href = "/cng-sample-images.zip";
+
+    const downloadButton = document.querySelector("#downloadButton");
+    const downloadSamplesButton = document.querySelector("#samplesButton");
+
+    downloadButton.addEventListener("click", downloadFontSet);
+    downloadSamplesButton.addEventListener("click", downloadSamples);
+  </script>
+</body>
+</html>
